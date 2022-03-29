@@ -6,14 +6,19 @@
 
 
 def main():
+    # Calculating perimeter and area
+
+    # Input
     print("Give me measurements of a rectangle!")
     length = int(input("Please enter the length (mm): "))
     width = int(input("Please enter the width (mm): "))
+
+    # Process
     area = length * width
     perimeter = 2 * (length + width)
-    superscript = str.maketrans("2", "²")
 
-    print("Area: {} mm²".translate(superscript).format(area))
+    # Output
+    print("Area: {} mm²".format(area))
     print("Perimeter: {} mm".format(perimeter))
 
 
